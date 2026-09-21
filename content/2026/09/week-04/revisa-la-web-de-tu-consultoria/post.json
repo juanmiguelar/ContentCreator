@@ -46,7 +46,10 @@
     }
   ],
   "published": {
-    "instagram": null,
+    "instagram": {
+      "date": "2026-09-30",
+      "url": "https://www.instagram.com/p/DdjvxndGw7F/?img_index=1"
+    },
     "linkedin": null
   },
   "requiredAssets": [],

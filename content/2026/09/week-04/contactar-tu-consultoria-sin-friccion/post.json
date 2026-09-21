@@ -1,15 +1,59 @@
 {
-  "id": "contactar-tu-consultoria-sin-friccion", "title": "Tu formulario también es parte de la primera impresión.",
-  "platform": ["instagram", "linkedin"], "status": "draft",
-  "calendar": { "year": 2026, "month": 9, "week": 4 }, "publishDate": "2026-09-28",
-  "campaign": "Presencia web para consultoría", "categories": ["educación", "contacto", "consultoría"],
-  "formats": ["portrait", "square", "story"],
-  "slides": [
-    { "id": "impresion", "order": 1, "label": "La primera impresión" },
-    { "id": "accion", "order": 2, "label": "La acción clara" },
-    { "id": "necesario", "order": 3, "label": "La información necesaria" },
-    { "id": "prueba", "order": 4, "label": "La prueba" }
+  "id": "contactar-tu-consultoria-sin-friccion",
+  "title": "Tu formulario también es parte de la primera impresión.",
+  "platform": [
+    "instagram",
+    "linkedin"
   ],
-  "published": { "instagram": null, "linkedin": null }, "requiredAssets": [],
-  "copy": { "headline": "Tu formulario también es parte de la primera impresión." }
+  "status": "draft",
+  "calendar": {
+    "year": 2026,
+    "month": 9,
+    "week": 4
+  },
+  "publishDate": "2026-09-28",
+  "campaign": "Presencia web para consultoría",
+  "categories": [
+    "educación",
+    "contacto",
+    "consultoría"
+  ],
+  "formats": [
+    "portrait",
+    "square",
+    "story"
+  ],
+  "slides": [
+    {
+      "id": "impresion",
+      "order": 1,
+      "label": "La primera impresión"
+    },
+    {
+      "id": "accion",
+      "order": 2,
+      "label": "La acción clara"
+    },
+    {
+      "id": "necesario",
+      "order": 3,
+      "label": "La información necesaria"
+    },
+    {
+      "id": "prueba",
+      "order": 4,
+      "label": "La prueba"
+    }
+  ],
+  "published": {
+    "instagram": {
+      "date": "2026-09-28",
+      "url": "https://www.instagram.com/p/DdjwDCrm-Jl/?img_index=1"
+    },
+    "linkedin": null
+  },
+  "requiredAssets": [],
+  "copy": {
+    "headline": "Tu formulario también es parte de la primera impresión."
+  }
 }
