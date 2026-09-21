@@ -1,11 +1,14 @@
 :root {
-  --ink: #25362c;
-  --muted: #7b827b;
-  --line: #e3e6de;
-  --paper: #f8f9f5;
-  --green: #2c593c;
-  --pale: #eaf0e4;
-  --warn: #946b30;
+  --ink: #16272f;
+  --muted: #52636a;
+  --line: #cbd2cf;
+  --paper: #f4f1e8;
+  --paper-elevated: #faf8f2;
+  --green: #173b52;
+  --teal: #2c7874;
+  --pale: #d9e6e8;
+  --fold-line: #b9c7c6;
+  --warn: #a66d2f;
 }
 * {
   box-sizing: border-box;
@@ -14,109 +17,109 @@ body {
   margin: 0;
   color: var(--ink);
   background: var(--paper);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Atkinson Hyperlegible Next", "Atkinson Hyperlegible", system-ui, sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
 }
-a {
+a:not([data-canvas-id] *) {
   color: inherit;
   text-decoration: none;
 }
-button,
-input,
-select,
-textarea {
+button:not([data-canvas-id] *),
+input:not([data-canvas-id] *),
+select:not([data-canvas-id] *),
+textarea:not([data-canvas-id] *) {
   font: inherit;
 }
-button,
-.button {
+button:not([data-canvas-id] *),
+.button:not([data-canvas-id] *) {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: 7px;
   padding: 10px 14px;
   border: 1px solid var(--line);
-  border-radius: 7px;
-  background: #fff;
+  border-radius: 4px;
+  background: var(--paper-elevated);
   color: var(--ink);
   cursor: pointer;
   font-weight: 500;
   line-height: 1.3;
 }
-button:hover,
-.button:hover {
-  background: #f1f4ed;
-  border-color: #c1ccbb;
+button:not([data-canvas-id] *):hover,
+.button:not([data-canvas-id] *):hover {
+  background: #e4eceb;
+  border-color: var(--fold-line);
 }
-button:disabled {
+button:not([data-canvas-id] *):disabled {
   opacity: 0.5;
   cursor: wait;
 }
-button:focus-visible,
-a:focus-visible,
-input:focus-visible,
-select:focus-visible,
-textarea:focus-visible {
+button:not([data-canvas-id] *):focus-visible,
+a:not([data-canvas-id] *):focus-visible,
+input:not([data-canvas-id] *):focus-visible,
+select:not([data-canvas-id] *):focus-visible,
+textarea:not([data-canvas-id] *):focus-visible {
   outline: 2px solid #518462;
   outline-offset: 3px;
 }
-button.primary,
-.button.primary {
-  background: var(--green);
-  border-color: var(--green);
+button.primary:not([data-canvas-id] *),
+.button.primary:not([data-canvas-id] *) {
+  background: var(--teal);
+  border-color: var(--teal);
   color: white;
 }
-.primary:hover {
-  background: #234831;
+.primary:not([data-canvas-id] *):hover {
+  background: #205d5a;
 }
-input,
-select,
-textarea {
+input:not([data-canvas-id] *),
+select:not([data-canvas-id] *),
+textarea:not([data-canvas-id] *) {
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 10px 11px;
   color: var(--ink);
   background: white;
   min-width: 0;
   max-width: 100%;
 }
-textarea {
+textarea:not([data-canvas-id] *) {
   width: 100%;
   resize: vertical;
   line-height: 1.65;
 }
-label {
+label:not([data-canvas-id] *) {
   display: flex;
   flex-direction: column;
   gap: 7px;
   font-size: 12px;
   font-weight: 500;
 }
-h1,
-h2,
-h3,
-p {
+h1:not([data-canvas-id] *),
+h2:not([data-canvas-id] *),
+h3:not([data-canvas-id] *),
+p:not([data-canvas-id] *) {
   margin-top: 0;
 }
-h1 {
+h1:not([data-canvas-id] *) {
   font-size: 32px;
   letter-spacing: -1.2px;
   line-height: 1.15;
   font-weight: 500;
 }
-h2 {
+h2:not([data-canvas-id] *) {
   font-size: 18px;
   letter-spacing: -0.4px;
   font-weight: 500;
 }
-p {
+p:not([data-canvas-id] *) {
   line-height: 1.65;
 }
 .muted {
   color: var(--muted);
   font-size: 11px;
 }
-code {
+code:not([data-canvas-id] *) {
   font-size: 11px;
   overflow-wrap: anywhere;
 }
@@ -147,7 +150,7 @@ code {
 .brandMark {
   background: var(--green);
   padding: 8px;
-  border-radius: 8px;
+  border-radius: 4px;
   color: #fff;
   display: flex;
 }

@@ -5,10 +5,19 @@
   box-shadow: 0 2px 12px #18251b0a;
 }
 .canvas {
+  /* Content canvases are an isolated document surface. Studio chrome and
+     global element selectors must never become part of a post's design. */
+  all: initial;
+  display: block;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
   isolation: isolate;
+}
+.canvasFrame {
+  display: block;
+  border: 0;
+  background: transparent;
 }
 .asset {
   display: block;

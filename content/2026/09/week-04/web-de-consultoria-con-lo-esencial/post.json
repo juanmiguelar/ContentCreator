@@ -1,0 +1,10 @@
+{
+  "id": "web-de-consultoria-con-lo-esencial", "title": "No hace falta empezar con una web enorme.",
+  "platform": ["instagram", "linkedin"], "status": "draft",
+  "calendar": { "year": 2026, "month": 9, "week": 4 }, "publishDate": "2026-09-26",
+  "campaign": "Presencia web para consultoría", "categories": ["educación", "presencia digital", "consultoría"],
+  "formats": ["portrait", "square", "story"],
+  "slides": [{ "id": "esencial", "order": 1, "label": "Lo esencial" }],
+  "published": { "instagram": null, "linkedin": null }, "requiredAssets": [],
+  "copy": { "headline": "No hace falta empezar con una web enorme." }
+}

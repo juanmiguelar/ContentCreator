@@ -1,12 +1,9 @@
 "use client";
+
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import styles from "./canvas.module.css";
-export function SocialCanvas({
-  width,
-  height,
-  children,
-  canvasId,
-}: {
+
+export function SocialCanvas({ width, height, children, canvasId }: {
   width: number;
   height: number;
   children: ReactNode;
@@ -23,20 +20,10 @@ export function SocialCanvas({
     observer.observe(element);
     return () => observer.disconnect();
   }, [width]);
+
   return (
-    <div
-      ref={frame}
-      className={styles.frame}
-      style={{ aspectRatio: `${width}/${height}` }}
-    >
-      <div
-        style={{
-          width,
-          height,
-          transform: `scale(${scale})`,
-          transformOrigin: "top left",
-        }}
-      >
+    <div ref={frame} className={styles.frame} style={{ aspectRatio: `${width}/${height}` }}>
+      <div style={{ width, height, transform: `scale(${scale})`, transformOrigin: "top left" }}>
         <div
           className={styles.canvas}
           data-canvas-id={canvasId}

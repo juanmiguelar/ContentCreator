@@ -1,0 +1,56 @@
+{
+  "id": "revisa-la-web-de-tu-consultoria",
+  "title": "¿Tu web explica bien tu consultoría?",
+  "platform": [
+    "instagram",
+    "linkedin"
+  ],
+  "status": "draft",
+  "calendar": {
+    "year": 2026,
+    "month": 9,
+    "week": 4
+  },
+  "publishDate": "2026-09-30",
+  "campaign": "Presencia web para consultoría",
+  "categories": [
+    "educación",
+    "auditoría",
+    "consultoría"
+  ],
+  "formats": [
+    "portrait",
+    "square",
+    "story"
+  ],
+  "slides": [
+    {
+      "id": "revision",
+      "order": 1,
+      "label": "La revisión"
+    },
+    {
+      "id": "claridad",
+      "order": 2,
+      "label": "Claridad"
+    },
+    {
+      "id": "confianza",
+      "order": 3,
+      "label": "Confianza"
+    },
+    {
+      "id": "contacto",
+      "order": 4,
+      "label": "Contacto"
+    }
+  ],
+  "published": {
+    "instagram": null,
+    "linkedin": null
+  },
+  "requiredAssets": [],
+  "copy": {
+    "headline": "¿Tu web explica bien tu consultoría?"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "tu-web-despues-de-una-recomendacion",
+  "title": "Te recomendaron. ¿Qué encuentra tu próximo cliente?",
+  "platform": [
+    "instagram",
+    "linkedin"
+  ],
+  "status": "draft",
+  "calendar": {
+    "year": 2026,
+    "month": 9,
+    "week": 3
+  },
+  "publishDate": "2026-09-21",
+  "campaign": "Presencia web para consultoría",
+  "categories": [
+    "educación",
+    "presencia digital",
+    "consultoría"
+  ],
+  "formats": [
+    "portrait",
+    "square",
+    "story"
+  ],
+  "slides": [
+    {
+      "id": "recomendacion",
+      "order": 1,
+      "label": "La recomendación"
+    },
+    {
+      "id": "contexto",
+      "order": 2,
+      "label": "El contexto"
+    },
+    {
+      "id": "proceso",
+      "order": 3,
+      "label": "La forma de trabajar"
+    },
+    {
+      "id": "contacto",
+      "order": 4,
+      "label": "El siguiente paso"
+    }
+  ],
+  "published": {
+    "instagram": {
+      "date": "2026-09-21",
+      "url": "https://www.instagram.com/p/Ddjs8whmyPZ/?img_index=1"
+    },
+    "linkedin": null
+  },
+  "requiredAssets": [],
+  "copy": {
+    "headline": "Te recomendaron. ¿Qué encuentra tu próximo cliente?"
+  }
+}
