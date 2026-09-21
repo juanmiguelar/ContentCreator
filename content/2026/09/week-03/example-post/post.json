@@ -1,0 +1,46 @@
+{
+  "id": "example-post",
+  "title": "A little structure. More room to create.",
+  "platform": ["instagram", "linkedin"],
+  "status": "draft",
+  "calendar": {
+    "year": 2026,
+    "month": 9,
+    "week": 3
+  },
+  "publishDate": "2026-09-21",
+  "campaign": "Getting started",
+  "categories": ["example", "workflow"],
+  "formats": ["portrait", "square", "story"],
+  "slides": [
+    {
+      "id": "cover",
+      "order": 1,
+      "label": "The idea"
+    },
+    {
+      "id": "workflow",
+      "order": 2,
+      "label": "The workflow"
+    }
+  ],
+  "published": {
+    "instagram": null,
+    "linkedin": null
+  },
+  "requiredAssets": [
+    {
+      "id": "dashboard-screenshot",
+      "type": "image",
+      "status": "missing",
+      "description": "A screenshot of your workspace. This optional example slot can be replaced in the editor.",
+      "optional": true
+    }
+  ],
+  "copy": {
+    "headline": "A little structure. More room to create.",
+    "subtitle": "One idea. Three perspectives. All in your repository.",
+    "body": "Start with an idea. Shape it in code. Make it yours.",
+    "cta": "Your next idea starts here."
+  }
+}

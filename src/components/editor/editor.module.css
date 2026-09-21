@@ -1,0 +1,130 @@
+.sectionHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 34px 0 14px;
+  gap: 12px;
+}
+.sectionHead h2 {
+  font-size: 16px;
+  margin: 0;
+}
+.sectionHead span {
+  font-size: 10px;
+  color: var(--muted);
+}
+.formats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+.assetNote {
+  color: #a38d5e;
+  font-size: 11px;
+  margin-bottom: 18px;
+}
+.editing {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 24px;
+  margin-top: 36px;
+  align-items: start;
+}
+.leftColumn,
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
+}
+.captionMeta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--muted);
+  margin: 11px 0 18px;
+}
+.platforms {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.platforms legend {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.platforms label {
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+}
+.platforms input {
+  accent-color: var(--green);
+}
+.divider {
+  margin: 24px 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+}
+.publication {
+  margin: 18px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.assetSlot {
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.assetSlot strong {
+  font-size: 12px;
+  font-weight: 500;
+}
+.assetSlot p {
+  font-size: 11px;
+  color: var(--muted);
+  margin: 0;
+}
+.assetSlot code {
+  font-size: 10px;
+  color: var(--muted);
+}
+.assetSlot input[type="file"] {
+  font-size: 11px;
+  width: 100%;
+}
+.feedback:empty {
+  display: none;
+}
+@media (max-width: 1100px) {
+  .formats {
+    gap: 12px;
+  }
+  .editing {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+}
+@media (max-width: 900px) {
+  .formats {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+    margin: auto;
+  }
+  .editing {
+    grid-template-columns: 1fr;
+  }
+  .sectionHead {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

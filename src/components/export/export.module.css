@@ -1,0 +1,59 @@
+.panel {
+  min-width: 0;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.header h2 {
+  font-size: 15px;
+  margin: 0 0 5px;
+}
+.header span {
+  color: var(--muted);
+  font-size: 11px;
+}
+.ratio {
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 5px 7px;
+}
+.stage {
+  background: #eeefec;
+  padding: 22px;
+  position: relative;
+  overflow: hidden;
+}
+.active {
+  width: 100%;
+}
+.inactive {
+  position: absolute;
+  left: -20000px;
+  top: 22px;
+  width: calc(100% - 44px);
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px 0;
+  gap: 8px;
+}
+.downloads {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 18px 18px;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.downloads button {
+  font-size: 11px;
+}

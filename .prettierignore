@@ -1,0 +1,8 @@
+node_modules
+.next
+.agents
+package-lock.json
+src/lib/content-registry.ts
+test-results
+playwright-report
+content/**/caption.md

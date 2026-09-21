@@ -1,0 +1,43 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 22px;
+  margin: 28px 0;
+}
+.card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+.preview {
+  padding: 28px;
+  height: 200px;
+  background: #efefe9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.preview img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.body {
+  padding: 18px;
+}
+.body small {
+  font-size: 9px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.body h2 {
+  font-size: 14px;
+  margin: 12px 0;
+}
+.body code {
+  font-size: 10px;
+  color: var(--muted);
+  display: block;
+  margin-bottom: 13px;
+}
