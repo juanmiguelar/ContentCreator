@@ -1,0 +1,60 @@
+{
+  "id": "5-senales-consultorio-necesita-web",
+  "style": "web-para-consultorios",
+  "title": "5 señales de que tu consultorio necesita una página web",
+  "platform": [
+    "instagram"
+  ],
+  "status": "draft",
+  "calendar": {
+    "year": 2026,
+    "month": 9,
+    "week": 4
+  },
+  "publishDate": "2026-09-24",
+  "campaign": "Páginas web para consultorios y profesionales",
+  "categories": [
+    "educación",
+    "presencia digital",
+    "servicios profesionales"
+  ],
+  "formats": [
+    "portrait",
+    "square",
+    "story"
+  ],
+  "slides": [
+    {
+      "id": "senales",
+      "order": 1,
+      "label": "5 señales de que tu consultorio necesita una página web"
+    },
+    {
+      "id": "preguntas",
+      "order": 2,
+      "label": "Tus pacientes siempre preguntan lo mismo"
+    },
+    {
+      "id": "datos",
+      "order": 3,
+      "label": "No encuentran tus horarios, ubicación o servicios"
+    },
+    {
+      "id": "redes",
+      "order": 4,
+      "label": "Tu perfil de redes sociales no explica todo"
+    },
+    {
+      "id": "confianza",
+      "order": 5,
+      "label": "Quieres transmitir más confianza antes de la primera cita"
+    }
+  ],
+  "published": {
+    "instagram": null
+  },
+  "requiredAssets": [],
+  "copy": {
+    "headline": "5 señales de que tu consultorio necesita una página web"
+  }
+}

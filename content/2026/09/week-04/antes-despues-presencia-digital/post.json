@@ -1,0 +1,50 @@
+{
+  "id": "antes-despues-presencia-digital",
+  "style": "web-para-consultorios",
+  "title": "Comunicar mejor también cambia la experiencia",
+  "platform": [
+    "instagram"
+  ],
+  "status": "draft",
+  "calendar": {
+    "year": 2026,
+    "month": 9,
+    "week": 4
+  },
+  "publishDate": "2026-09-25",
+  "campaign": "Páginas web para consultorios y profesionales",
+  "categories": [
+    "educación",
+    "presencia digital",
+    "servicios profesionales"
+  ],
+  "formats": [
+    "portrait",
+    "square",
+    "story"
+  ],
+  "slides": [
+    {
+      "id": "diferencia",
+      "order": 1,
+      "label": "La diferencia no siempre está en trabajar más. A veces está en comunicar mejor."
+    },
+    {
+      "id": "antes",
+      "order": 2,
+      "label": "Antes: información dispersa, servicios poco claros y contacto difícil"
+    },
+    {
+      "id": "despues",
+      "order": 3,
+      "label": "Después: estructura clara, información útil y un siguiente paso visible"
+    }
+  ],
+  "published": {
+    "instagram": null
+  },
+  "requiredAssets": [],
+  "copy": {
+    "headline": "Comunicar mejor también cambia la experiencia"
+  }
+}

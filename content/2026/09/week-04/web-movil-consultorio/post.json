@@ -1,0 +1,55 @@
+{
+  "id": "web-movil-consultorio",
+  "style": "web-para-consultorios",
+  "title": "¿Tu página funciona bien desde el celular?",
+  "platform": [
+    "instagram"
+  ],
+  "status": "draft",
+  "calendar": {
+    "year": 2026,
+    "month": 9,
+    "week": 4
+  },
+  "publishDate": "2026-09-29",
+  "campaign": "Páginas web para consultorios y profesionales",
+  "categories": [
+    "educación",
+    "presencia digital",
+    "servicios profesionales"
+  ],
+  "formats": [
+    "portrait",
+    "square",
+    "story"
+  ],
+  "slides": [
+    {
+      "id": "movil",
+      "order": 1,
+      "label": "¿Tu página funciona bien desde el celular?"
+    },
+    {
+      "id": "texto",
+      "order": 2,
+      "label": "El texto debe poder leerse sin esfuerzo"
+    },
+    {
+      "id": "contacto",
+      "order": 3,
+      "label": "El contacto debe estar a pocos pasos"
+    },
+    {
+      "id": "importante",
+      "order": 4,
+      "label": "La información importante no debe quedar escondida"
+    }
+  ],
+  "published": {
+    "instagram": null
+  },
+  "requiredAssets": [],
+  "copy": {
+    "headline": "¿Tu página funciona bien desde el celular?"
+  }
+}

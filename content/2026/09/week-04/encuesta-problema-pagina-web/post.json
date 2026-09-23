@@ -1,0 +1,55 @@
+{
+  "id": "encuesta-problema-pagina-web",
+  "style": "web-para-consultorios",
+  "title": "Queremos conocer tu principal reto digital",
+  "platform": [
+    "instagram"
+  ],
+  "status": "draft",
+  "calendar": {
+    "year": 2026,
+    "month": 9,
+    "week": 4
+  },
+  "publishDate": "2026-09-30",
+  "campaign": "Páginas web para consultorios y profesionales",
+  "categories": [
+    "educación",
+    "presencia digital",
+    "servicios profesionales"
+  ],
+  "formats": [
+    "portrait",
+    "square",
+    "story"
+  ],
+  "slides": [
+    {
+      "id": "reto",
+      "order": 1,
+      "label": "Queremos conocer tu principal reto digital"
+    },
+    {
+      "id": "sin-web",
+      "order": 2,
+      "label": "¿No tienes página web?"
+    },
+    {
+      "id": "actualizada",
+      "order": 3,
+      "label": "¿Tu página está desactualizada?"
+    },
+    {
+      "id": "informacion",
+      "order": 4,
+      "label": "¿No sabes qué información incluir?"
+    }
+  ],
+  "published": {
+    "instagram": null
+  },
+  "requiredAssets": [],
+  "copy": {
+    "headline": "Queremos conocer tu principal reto digital"
+  }
+}

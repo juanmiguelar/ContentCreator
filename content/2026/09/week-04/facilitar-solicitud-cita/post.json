@@ -1,0 +1,50 @@
+{
+  "id": "facilitar-solicitud-cita",
+  "style": "web-para-consultorios",
+  "title": "Solicitar una cita no debería sentirse complicado",
+  "platform": [
+    "instagram"
+  ],
+  "status": "draft",
+  "calendar": {
+    "year": 2026,
+    "month": 9,
+    "week": 4
+  },
+  "publishDate": "2026-09-29",
+  "campaign": "Páginas web para consultorios y profesionales",
+  "categories": [
+    "educación",
+    "presencia digital",
+    "servicios profesionales"
+  ],
+  "formats": [
+    "portrait",
+    "square",
+    "story"
+  ],
+  "slides": [
+    {
+      "id": "cita",
+      "order": 1,
+      "label": "Solicitar una cita no debería sentirse complicado"
+    },
+    {
+      "id": "pasos",
+      "order": 2,
+      "label": "Información clara + contacto visible + instrucciones sencillas"
+    },
+    {
+      "id": "avanzar",
+      "order": 3,
+      "label": "Cada paso debe ayudar a la persona a avanzar"
+    }
+  ],
+  "published": {
+    "instagram": null
+  },
+  "requiredAssets": [],
+  "copy": {
+    "headline": "Solicitar una cita no debería sentirse complicado"
+  }
+}

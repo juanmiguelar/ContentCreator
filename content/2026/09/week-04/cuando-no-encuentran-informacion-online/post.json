@@ -1,0 +1,55 @@
+{
+  "id": "cuando-no-encuentran-informacion-online",
+  "style": "web-para-consultorios",
+  "title": "¿Qué piensa una persona cuando no encuentra información sobre tu negocio?",
+  "platform": [
+    "instagram"
+  ],
+  "status": "draft",
+  "calendar": {
+    "year": 2026,
+    "month": 9,
+    "week": 4
+  },
+  "publishDate": "2026-09-25",
+  "campaign": "Páginas web para consultorios y profesionales",
+  "categories": [
+    "educación",
+    "presencia digital",
+    "servicios profesionales"
+  ],
+  "formats": [
+    "portrait",
+    "square",
+    "story"
+  ],
+  "slides": [
+    {
+      "id": "duda",
+      "order": 1,
+      "label": "¿Qué piensa una persona cuando no encuentra información sobre tu negocio?"
+    },
+    {
+      "id": "servicio",
+      "order": 2,
+      "label": "¿Atienden este servicio?"
+    },
+    {
+      "id": "ubicacion",
+      "order": 3,
+      "label": "¿Dónde están ubicados?"
+    },
+    {
+      "id": "cita",
+      "order": 4,
+      "label": "¿Cómo puedo solicitar una cita o consulta?"
+    }
+  ],
+  "published": {
+    "instagram": null
+  },
+  "requiredAssets": [],
+  "copy": {
+    "headline": "¿Qué piensa una persona cuando no encuentra información sobre tu negocio?"
+  }
+}

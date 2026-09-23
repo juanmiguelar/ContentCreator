@@ -1,0 +1,50 @@
+{
+  "id": "diagnostico-presencia-web",
+  "style": "web-para-consultorios",
+  "title": "¿Tu presencia digital está ayudando a tu negocio?",
+  "platform": [
+    "instagram"
+  ],
+  "status": "draft",
+  "calendar": {
+    "year": 2026,
+    "month": 9,
+    "week": 4
+  },
+  "publishDate": "2026-09-26",
+  "campaign": "Páginas web para consultorios y profesionales",
+  "categories": [
+    "educación",
+    "presencia digital",
+    "servicios profesionales"
+  ],
+  "formats": [
+    "portrait",
+    "square",
+    "story"
+  ],
+  "slides": [
+    {
+      "id": "diagnostico",
+      "order": 1,
+      "label": "¿Tu presencia digital está ayudando a tu negocio?"
+    },
+    {
+      "id": "criterios",
+      "order": 2,
+      "label": "Revisemos claridad, servicios, contacto y experiencia móvil"
+    },
+    {
+      "id": "orientacion",
+      "order": 3,
+      "label": "Recibe una orientación inicial para saber qué mejorar"
+    }
+  ],
+  "published": {
+    "instagram": null
+  },
+  "requiredAssets": [],
+  "copy": {
+    "headline": "¿Tu presencia digital está ayudando a tu negocio?"
+  }
+}

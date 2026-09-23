@@ -1,0 +1,55 @@
+{
+  "id": "web-no-es-solo-estar-en-google",
+  "style": "web-para-consultorios",
+  "title": "Una página web no es solo aparecer en Google",
+  "platform": [
+    "instagram"
+  ],
+  "status": "draft",
+  "calendar": {
+    "year": 2026,
+    "month": 9,
+    "week": 4
+  },
+  "publishDate": "2026-09-26",
+  "campaign": "Páginas web para consultorios y profesionales",
+  "categories": [
+    "educación",
+    "presencia digital",
+    "servicios profesionales"
+  ],
+  "formats": [
+    "portrait",
+    "square",
+    "story"
+  ],
+  "slides": [
+    {
+      "id": "visibilidad",
+      "order": 1,
+      "label": "Una página web no es solo aparecer en Google"
+    },
+    {
+      "id": "quien",
+      "order": 2,
+      "label": "También explica quién eres"
+    },
+    {
+      "id": "servicios",
+      "order": 3,
+      "label": "Muestra qué servicios ofreces"
+    },
+    {
+      "id": "contacto",
+      "order": 4,
+      "label": "Y facilita que una persona decida contactarte"
+    }
+  ],
+  "published": {
+    "instagram": null
+  },
+  "requiredAssets": [],
+  "copy": {
+    "headline": "Una página web no es solo aparecer en Google"
+  }
+}

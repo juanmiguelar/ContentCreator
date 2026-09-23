@@ -1,0 +1,50 @@
+{
+  "id": "revision-pagina-actual",
+  "style": "web-para-consultorios",
+  "title": "Tu página actual puede estar funcionando… o simplemente estar publicada",
+  "platform": [
+    "instagram"
+  ],
+  "status": "draft",
+  "calendar": {
+    "year": 2026,
+    "month": 9,
+    "week": 4
+  },
+  "publishDate": "2026-09-28",
+  "campaign": "Páginas web para consultorios y profesionales",
+  "categories": [
+    "educación",
+    "presencia digital",
+    "servicios profesionales"
+  ],
+  "formats": [
+    "portrait",
+    "square",
+    "story"
+  ],
+  "slides": [
+    {
+      "id": "actual",
+      "order": 1,
+      "label": "Tu página actual puede estar funcionando… o simplemente estar publicada"
+    },
+    {
+      "id": "revisemos",
+      "order": 2,
+      "label": "Revisemos si se entiende, si se ve bien en celular y si facilita el contacto"
+    },
+    {
+      "id": "ordenar",
+      "order": 3,
+      "label": "A veces no necesitas empezar de cero. Necesitas ordenar mejor."
+    }
+  ],
+  "published": {
+    "instagram": null
+  },
+  "requiredAssets": [],
+  "copy": {
+    "headline": "Tu página actual puede estar funcionando… o simplemente estar publicada"
+  }
+}

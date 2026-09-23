@@ -1,0 +1,60 @@
+{
+  "id": "informacion-esencial-paciente",
+  "style": "web-para-consultorios",
+  "title": "¿Qué debe encontrar un paciente en 30 segundos?",
+  "platform": [
+    "instagram"
+  ],
+  "status": "draft",
+  "calendar": {
+    "year": 2026,
+    "month": 9,
+    "week": 4
+  },
+  "publishDate": "2026-09-27",
+  "campaign": "Páginas web para consultorios y profesionales",
+  "categories": [
+    "educación",
+    "presencia digital",
+    "servicios profesionales"
+  ],
+  "formats": [
+    "portrait",
+    "square",
+    "story"
+  ],
+  "slides": [
+    {
+      "id": "treinta-segundos",
+      "order": 1,
+      "label": "¿Qué debe encontrar un paciente en 30 segundos?"
+    },
+    {
+      "id": "que-haces",
+      "order": 2,
+      "label": "Qué haces"
+    },
+    {
+      "id": "para-quien",
+      "order": 3,
+      "label": "Para quién es tu servicio"
+    },
+    {
+      "id": "donde-cuando",
+      "order": 4,
+      "label": "Dónde y cuándo atiendes"
+    },
+    {
+      "id": "como-contactar",
+      "order": 5,
+      "label": "Cómo puede contactarte"
+    }
+  ],
+  "published": {
+    "instagram": null
+  },
+  "requiredAssets": [],
+  "copy": {
+    "headline": "¿Qué debe encontrar un paciente en 30 segundos?"
+  }
+}

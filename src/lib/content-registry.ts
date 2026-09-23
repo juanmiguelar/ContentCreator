@@ -5,18 +5,46 @@ import type { PostProps } from "@/types/post";
 import Post0 from "../../content/2026/09/week-03/example-post/Post";
 import Post1 from "../../content/2026/09/week-03/posicionamiento-web-sin-complicarlo/Post";
 import Post2 from "../../content/2026/09/week-03/tu-web-despues-de-una-recomendacion/Post";
-import Post3 from "../../content/2026/09/week-04/contactar-tu-consultoria-sin-friccion/Post";
-import Post4 from "../../content/2026/09/week-04/muestra-como-trabaja-tu-consultoria/Post";
-import Post5 from "../../content/2026/09/week-04/redes-y-web-en-tu-consultoria/Post";
-import Post6 from "../../content/2026/09/week-04/revisa-la-web-de-tu-consultoria/Post";
-import Post7 from "../../content/2026/09/week-04/web-de-consultoria-con-lo-esencial/Post";
+import Post3 from "../../content/2026/09/week-04/5-senales-consultorio-necesita-web/Post";
+import Post4 from "../../content/2026/09/week-04/antes-despues-presencia-digital/Post";
+import Post5 from "../../content/2026/09/week-04/contactar-tu-consultoria-sin-friccion/Post";
+import Post6 from "../../content/2026/09/week-04/cuando-no-encuentran-informacion-online/Post";
+import Post7 from "../../content/2026/09/week-04/diagnostico-presencia-web/Post";
+import Post8 from "../../content/2026/09/week-04/encuesta-problema-pagina-web/Post";
+import Post9 from "../../content/2026/09/week-04/errores-web-profesionales/Post";
+import Post10 from "../../content/2026/09/week-04/estructura-web-consultorio/Post";
+import Post11 from "../../content/2026/09/week-04/facilitar-solicitud-cita/Post";
+import Post12 from "../../content/2026/09/week-04/informacion-esencial-paciente/Post";
+import Post13 from "../../content/2026/09/week-04/muestra-como-trabaja-tu-consultoria/Post";
+import Post14 from "../../content/2026/09/week-04/redes-y-web-en-tu-consultoria/Post";
+import Post15 from "../../content/2026/09/week-04/respuestas-dudas-pagina-web/Post";
+import Post16 from "../../content/2026/09/week-04/revisa-la-web-de-tu-consultoria/Post";
+import Post17 from "../../content/2026/09/week-04/revision-pagina-actual/Post";
+import Post18 from "../../content/2026/09/week-04/web-de-consultoria-con-lo-esencial/Post";
+import Post19 from "../../content/2026/09/week-04/web-movil-consultorio/Post";
+import Post20 from "../../content/2026/09/week-04/web-no-es-solo-estar-en-google/Post";
+import Post21 from "../../content/2026/09/week-04/webs-para-consultorios-profesionales/Post";
 export const postRegistry: Record<string, ComponentType<PostProps>> = {
   "2026/09/week-03/example-post": Post0,
   "2026/09/week-03/posicionamiento-web-sin-complicarlo": Post1,
   "2026/09/week-03/tu-web-despues-de-una-recomendacion": Post2,
-  "2026/09/week-04/contactar-tu-consultoria-sin-friccion": Post3,
-  "2026/09/week-04/muestra-como-trabaja-tu-consultoria": Post4,
-  "2026/09/week-04/redes-y-web-en-tu-consultoria": Post5,
-  "2026/09/week-04/revisa-la-web-de-tu-consultoria": Post6,
-  "2026/09/week-04/web-de-consultoria-con-lo-esencial": Post7,
+  "2026/09/week-04/5-senales-consultorio-necesita-web": Post3,
+  "2026/09/week-04/antes-despues-presencia-digital": Post4,
+  "2026/09/week-04/contactar-tu-consultoria-sin-friccion": Post5,
+  "2026/09/week-04/cuando-no-encuentran-informacion-online": Post6,
+  "2026/09/week-04/diagnostico-presencia-web": Post7,
+  "2026/09/week-04/encuesta-problema-pagina-web": Post8,
+  "2026/09/week-04/errores-web-profesionales": Post9,
+  "2026/09/week-04/estructura-web-consultorio": Post10,
+  "2026/09/week-04/facilitar-solicitud-cita": Post11,
+  "2026/09/week-04/informacion-esencial-paciente": Post12,
+  "2026/09/week-04/muestra-como-trabaja-tu-consultoria": Post13,
+  "2026/09/week-04/redes-y-web-en-tu-consultoria": Post14,
+  "2026/09/week-04/respuestas-dudas-pagina-web": Post15,
+  "2026/09/week-04/revisa-la-web-de-tu-consultoria": Post16,
+  "2026/09/week-04/revision-pagina-actual": Post17,
+  "2026/09/week-04/web-de-consultoria-con-lo-esencial": Post18,
+  "2026/09/week-04/web-movil-consultorio": Post19,
+  "2026/09/week-04/web-no-es-solo-estar-en-google": Post20,
+  "2026/09/week-04/webs-para-consultorios-profesionales": Post21,
 };

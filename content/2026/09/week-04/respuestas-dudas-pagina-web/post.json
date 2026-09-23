@@ -1,0 +1,60 @@
+{
+  "id": "respuestas-dudas-pagina-web",
+  "style": "web-para-consultorios",
+  "title": "3 dudas frecuentes sobre crear una página web",
+  "platform": [
+    "instagram"
+  ],
+  "status": "draft",
+  "calendar": {
+    "year": 2026,
+    "month": 9,
+    "week": 4
+  },
+  "publishDate": "2026-09-30",
+  "campaign": "Páginas web para consultorios y profesionales",
+  "categories": [
+    "educación",
+    "presencia digital",
+    "servicios profesionales"
+  ],
+  "formats": [
+    "portrait",
+    "square",
+    "story"
+  ],
+  "slides": [
+    {
+      "id": "dudas",
+      "order": 1,
+      "label": "3 dudas frecuentes sobre crear una página web"
+    },
+    {
+      "id": "contenido",
+      "order": 2,
+      "label": "¿Tengo que escribir todo el contenido? No. Podemos organizarlo contigo."
+    },
+    {
+      "id": "fotos",
+      "order": 3,
+      "label": "¿Necesito tener fotos profesionales? Depende del proyecto; no hay que inventar recursos."
+    },
+    {
+      "id": "actualizar",
+      "order": 4,
+      "label": "¿Puedo actualizarla después? Sí, la estructura debe pensarse para crecer."
+    },
+    {
+      "id": "empezar",
+      "order": 5,
+      "label": "¿Por dónde empiezo? Por aclarar qué debe lograr tu página."
+    }
+  ],
+  "published": {
+    "instagram": null
+  },
+  "requiredAssets": [],
+  "copy": {
+    "headline": "3 dudas frecuentes sobre crear una página web"
+  }
+}

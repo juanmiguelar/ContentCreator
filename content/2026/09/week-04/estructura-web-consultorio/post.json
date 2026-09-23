@@ -1,0 +1,60 @@
+{
+  "id": "estructura-web-consultorio",
+  "style": "web-para-consultorios",
+  "title": "La estructura básica de una buena web para consultorios",
+  "platform": [
+    "instagram"
+  ],
+  "status": "draft",
+  "calendar": {
+    "year": 2026,
+    "month": 9,
+    "week": 4
+  },
+  "publishDate": "2026-09-27",
+  "campaign": "Páginas web para consultorios y profesionales",
+  "categories": [
+    "educación",
+    "presencia digital",
+    "servicios profesionales"
+  ],
+  "formats": [
+    "portrait",
+    "square",
+    "story"
+  ],
+  "slides": [
+    {
+      "id": "estructura",
+      "order": 1,
+      "label": "La estructura básica de una buena web para consultorios"
+    },
+    {
+      "id": "presentacion",
+      "order": 2,
+      "label": "1. Presentación clara"
+    },
+    {
+      "id": "especialidades",
+      "order": 3,
+      "label": "2. Servicios o especialidades"
+    },
+    {
+      "id": "practica",
+      "order": 4,
+      "label": "3. Información práctica"
+    },
+    {
+      "id": "contacto-visible",
+      "order": 5,
+      "label": "4. Contacto visible"
+    }
+  ],
+  "published": {
+    "instagram": null
+  },
+  "requiredAssets": [],
+  "copy": {
+    "headline": "La estructura básica de una buena web para consultorios"
+  }
+}

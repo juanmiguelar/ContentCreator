@@ -1,0 +1,60 @@
+{
+  "id": "errores-web-profesionales",
+  "style": "web-para-consultorios",
+  "title": "5 errores comunes en páginas de profesionales",
+  "platform": [
+    "instagram"
+  ],
+  "status": "draft",
+  "calendar": {
+    "year": 2026,
+    "month": 9,
+    "week": 4
+  },
+  "publishDate": "2026-09-28",
+  "campaign": "Páginas web para consultorios y profesionales",
+  "categories": [
+    "educación",
+    "presencia digital",
+    "servicios profesionales"
+  ],
+  "formats": [
+    "portrait",
+    "square",
+    "story"
+  ],
+  "slides": [
+    {
+      "id": "errores",
+      "order": 1,
+      "label": "5 errores comunes en páginas de profesionales"
+    },
+    {
+      "id": "empresa",
+      "order": 2,
+      "label": "Hablar demasiado de la empresa y poco del cliente"
+    },
+    {
+      "id": "explicar",
+      "order": 3,
+      "label": "No explicar claramente los servicios"
+    },
+    {
+      "id": "boton",
+      "order": 4,
+      "label": "Esconder el botón de contacto"
+    },
+    {
+      "id": "movil",
+      "order": 5,
+      "label": "No revisar la experiencia desde el celular"
+    }
+  ],
+  "published": {
+    "instagram": null
+  },
+  "requiredAssets": [],
+  "copy": {
+    "headline": "5 errores comunes en páginas de profesionales"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "webs-para-consultorios-profesionales",
+  "style": "web-para-consultorios",
+  "title": "Tu trabajo merece una presencia digital clara",
+  "platform": [
+    "instagram"
+  ],
+  "status": "draft",
+  "calendar": {
+    "year": 2026,
+    "month": 9,
+    "week": 4
+  },
+  "publishDate": "2026-09-24",
+  "campaign": "Páginas web para consultorios y profesionales",
+  "categories": [
+    "educación",
+    "presencia digital",
+    "servicios profesionales"
+  ],
+  "formats": [
+    "portrait",
+    "square",
+    "story"
+  ],
+  "slides": [
+    {
+      "id": "presencia",
+      "order": 1,
+      "label": "Tu trabajo merece una presencia digital clara"
+    },
+    {
+      "id": "diseno",
+      "order": 2,
+      "label": "Diseñamos páginas web para consultorios y profesionales"
+    },
+    {
+      "id": "esencial",
+      "order": 3,
+      "label": "Servicios, experiencia, ubicación y contacto en un solo lugar"
+    }
+  ],
+  "published": {
+    "instagram": null
+  },
+  "requiredAssets": [],
+  "copy": {
+    "headline": "Tu trabajo merece una presencia digital clara"
+  }
+}
