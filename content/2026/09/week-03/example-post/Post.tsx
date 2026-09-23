@@ -1,16 +1,18 @@
 import type { PostProps } from "@/types/post";
 import { AssetSlot } from "@/components/canvas/AssetSlot";
 import { EditableText } from "@/components/canvas/EditableText";
+import { ContentStyleMark } from "@/components/content-style/ContentStyleMark";
 import styles from "./post.module.css";
 function Diagram({ wide = false }: { wide?: boolean }) {
   return (
     <svg
+      data-content-motif="outline"
       viewBox={wide ? "0 0 700 220" : "0 0 700 400"}
       role="img"
       aria-label="Three independently composed formats"
       className={styles.diagram}
     >
-      <g fill="none" stroke="currentColor" strokeWidth="2">
+      <g fill="none" stroke="currentColor" strokeWidth="var(--content-stroke)">
         <rect
           x="50"
           y={wide ? 30 : 90}
@@ -39,6 +41,7 @@ export default function Post({
   slideId,
   metadata,
   postKey,
+  contentStyle,
 }: PostProps) {
   const headline = (
     <EditableText as="h1" field="headline" value={metadata.copy.headline} />
@@ -59,6 +62,7 @@ export default function Post({
         className={`${styles.base} ${styles[format]} ${styles.workflow}`}
       >
         <header>
+          <ContentStyleMark style={contentStyle} />
           EXAMPLE CONTENT <span>02 / 02</span>
         </header>
         <h1>
@@ -90,6 +94,7 @@ export default function Post({
     return (
       <article className={`${styles.base} ${styles.square}`}>
         <header>
+          <ContentStyleMark style={contentStyle} />
           EXAMPLE CONTENT <span>01 / 02</span>
         </header>
         <div className={styles.squareLead}>
@@ -107,6 +112,7 @@ export default function Post({
     return (
       <article className={`${styles.base} ${styles.story}`}>
         <header>
+          <ContentStyleMark style={contentStyle} />
           EXAMPLE CONTENT <span>01 / 02</span>
         </header>
         <div className={styles.storyLead}>
@@ -125,6 +131,7 @@ export default function Post({
   return (
     <article className={`${styles.base} ${styles.portrait}`}>
       <header>
+        <ContentStyleMark style={contentStyle} />
         EXAMPLE CONTENT <span>01 / 02</span>
       </header>
       <div className={styles.portraitLead}>

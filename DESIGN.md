@@ -1,3 +1,13 @@
+# Content Creator application UI
+
+**Scope:** This document describes only the Content Creator application interface.
+It is not a publication design specification and must never enter the publication
+rendering pipeline. Publication identity is defined exclusively by the registered
+pack referenced by `post.json.style` under `content-styles/`.
+
+The existing UI specification below is retained; introducing Content Styles does
+not redesign the application.
+
 ---
 
 version: alpha

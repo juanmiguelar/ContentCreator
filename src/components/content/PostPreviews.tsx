@@ -1,10 +1,12 @@
 "use client";
+import { getContentStyle } from "../../../content-styles/loader";
 import type { PostRecord } from "@/types/post";
 import { postRegistry } from "@/lib/content-registry";
 import { FORMAT_KEYS } from "@/lib/content/formats";
 import { FormatPanel } from "@/components/export/FormatPanel";
 import styles from "@/components/editor/editor.module.css";
 export default function PostPreviews({ post }: { post: PostRecord }) {
+  const contentStyle = getContentStyle(post.metadata.style);
   const Composition = postRegistry[post.key];
   if (!Composition)
     return (
@@ -17,7 +19,8 @@ export default function PostPreviews({ post }: { post: PostRecord }) {
     <div className={styles.formats}>
       {FORMAT_KEYS.map((format) => (
         <FormatPanel
-          key={format}
+          key={`${contentStyle.id}-${format}`}
+          contentStyle={contentStyle}
           post={post}
           format={format}
           Composition={Composition}

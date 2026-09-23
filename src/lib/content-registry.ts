@@ -3,18 +3,20 @@
 import type { ComponentType } from "react";
 import type { PostProps } from "@/types/post";
 import Post0 from "../../content/2026/09/week-03/example-post/Post";
-import Post1 from "../../content/2026/09/week-03/tu-web-despues-de-una-recomendacion/Post";
-import Post2 from "../../content/2026/09/week-04/contactar-tu-consultoria-sin-friccion/Post";
-import Post3 from "../../content/2026/09/week-04/muestra-como-trabaja-tu-consultoria/Post";
-import Post4 from "../../content/2026/09/week-04/redes-y-web-en-tu-consultoria/Post";
-import Post5 from "../../content/2026/09/week-04/revisa-la-web-de-tu-consultoria/Post";
-import Post6 from "../../content/2026/09/week-04/web-de-consultoria-con-lo-esencial/Post";
+import Post1 from "../../content/2026/09/week-03/posicionamiento-web-sin-complicarlo/Post";
+import Post2 from "../../content/2026/09/week-03/tu-web-despues-de-una-recomendacion/Post";
+import Post3 from "../../content/2026/09/week-04/contactar-tu-consultoria-sin-friccion/Post";
+import Post4 from "../../content/2026/09/week-04/muestra-como-trabaja-tu-consultoria/Post";
+import Post5 from "../../content/2026/09/week-04/redes-y-web-en-tu-consultoria/Post";
+import Post6 from "../../content/2026/09/week-04/revisa-la-web-de-tu-consultoria/Post";
+import Post7 from "../../content/2026/09/week-04/web-de-consultoria-con-lo-esencial/Post";
 export const postRegistry: Record<string, ComponentType<PostProps>> = {
   "2026/09/week-03/example-post": Post0,
-  "2026/09/week-03/tu-web-despues-de-una-recomendacion": Post1,
-  "2026/09/week-04/contactar-tu-consultoria-sin-friccion": Post2,
-  "2026/09/week-04/muestra-como-trabaja-tu-consultoria": Post3,
-  "2026/09/week-04/redes-y-web-en-tu-consultoria": Post4,
-  "2026/09/week-04/revisa-la-web-de-tu-consultoria": Post5,
-  "2026/09/week-04/web-de-consultoria-con-lo-esencial": Post6,
+  "2026/09/week-03/posicionamiento-web-sin-complicarlo": Post1,
+  "2026/09/week-03/tu-web-despues-de-una-recomendacion": Post2,
+  "2026/09/week-04/contactar-tu-consultoria-sin-friccion": Post3,
+  "2026/09/week-04/muestra-como-trabaja-tu-consultoria": Post4,
+  "2026/09/week-04/redes-y-web-en-tu-consultoria": Post5,
+  "2026/09/week-04/revisa-la-web-de-tu-consultoria": Post6,
+  "2026/09/week-04/web-de-consultoria-con-lo-esencial": Post7,
 };

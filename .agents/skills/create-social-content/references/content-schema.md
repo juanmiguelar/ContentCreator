@@ -7,6 +7,7 @@ The maintained schema is src/schemas/post.ts. Minimal example:
 ```json
 {
   "id": "post-slug",
+  "style": "default",
   "title": "Post title",
   "platform": ["instagram"],
   "status": "draft",
@@ -26,6 +27,8 @@ Platforms: instagram, facebook, linkedin, other. Status progression: idea → dr
 
 Slides have unique IDs and positive unique order values. Sort with orderedSlides; values need not be contiguous. Every slide must be implemented in every format. The sorted narrative maps to contiguous export numbers 01, 02, 03.
 
-Post.tsx default-exports a component accepting PostProps: format, slideId, metadata, postKey. The studio supplies SocialCanvas and Slide; do not nest another canvas inside the post. Use the example as an API reference, not a design template.
+Post.tsx default-exports a component accepting PostProps: format, slideId, metadata, postKey, contentStyle, template. style is a required registered ID; missing/unknown styles fail schema validation. The studio supplies SocialCanvas, Slide and StyleSurface; do not nest another canvas inside the post. Use the example as an API reference, not a design template.
 
 Asset slots use `{ "id": "dashboard-screenshot", "type": "image", "status": "missing", "description": "Screenshot needed", "optional": false }`. Provided assets add source: `assets/filename.png` or `/assets/screenshots/filename.png`. Render AssetSlot with id, label, description, aspectRatio, metadata, postKey. Upload filenames include a content hash to prevent stale caching. Existence checks, not just stored status, determine missing assets. Old uploads remain for Git review; clean them manually if desired.
+
+The selected pack supplies all visual tokens and three format templates. Read content-styles/README.md for registration and --content-* variables. Changing post.json.style changes all previews and is persisted with metadata; it never changes the application theme.

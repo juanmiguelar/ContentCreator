@@ -14,7 +14,7 @@ npm run dev
 Open http://127.0.0.1:3000. The server binds to loopback. Use the development server for content authoring: it recompiles new post components and watches existing source changes. Metadata and captions are always read from disk.
 
 ```bash
-npm run validate   # registry, ESLint, TypeScript, infrastructure tests
+npm run validate   # registry, pack/content validation, ESLint, TypeScript, infrastructure tests
 npm run build
 npm start          # local production server; rebuild after adding/changing composition code
 npm run test:e2e   # real browser workflow tests in an isolated temporary repository
@@ -26,22 +26,28 @@ Browser tests use Playwright Chromium. Run `npx playwright install chromium` onc
 
 The library contains one clearly labeled neutral example at `/posts/2026/09/week-03/example-post`. Open it to review two slides in each of three panels. Change JPG/PNG per panel, download a slide or download all as a ZIP. Edit/copy the caption, save metadata, or fill the optional screenshot slot. Copy fields update the previews immediately and persist in post.json when saved.
 
-The studio UI uses its own restrained interface palette. It is **not** a brand specification for social posts. DESIGN.md is intentionally undefined. Codex must read it before designing content; add your actual rules there before requesting branded work. The library displays a reminder but does not parse the design specification.
+`DESIGN.md` describes only the Content Creator application UI. Publication identity
+comes exclusively from the Content Style Pack selected in `post.json.style`.
+The `Content Style` selector changes all three previews immediately; saving writes
+the selection to the repository. Available packs are `default` (neutral) and `web-para-consultorios`
+(Origami Care, extracted from the existing brand website). Missing or unknown styles fail explicitly. Read
+[content-styles/README.md](content-styles/README.md) for the schema, tokens, rules,
+format templates, assets and registration workflow.
 
 ## Create content with Codex
 
 Invoke `.agents/skills/create-social-content/SKILL.md`, for example:
 
-> Use create-social-content to create a two-slide carousel about our new dashboard for September 24, 2026. Read DESIGN.md and declare a screenshot slot if needed.
+> Use create-social-content to create a two-slide carousel about our new dashboard for September 24, 2026. Use the registered default Content Style, read its STYLE.md/tokens/rules/templates, and declare a screenshot slot if needed.
 
-Codex reads AGENTS.md and DESIGN.md, inspects reusable assets, creates the publication files, composes three independent layouts, and validates the result. `New idea` in the studio also creates a real folder with three neutral starter layouts; those are a starting point for code authoring, not a restrictive template system.
+Codex reads AGENTS.md and the selected Content Style Pack, inspects reusable assets, creates the publication files, composes three related format adaptations, and validates their rules. `New idea` in the studio also creates a real folder with an explicit style selection and three template-driven starter layouts; those are a starting point for code authoring, not a restrictive template system.
 
 ## Create a post manually
 
 1. Choose `content/YYYY/MM/week-XX/post-slug/`.
-2. Write `post.json` using src/schemas/post.ts and the skill's content-schema.md. Include unique slide IDs and ordering, all three formats, and any asset slots. Use `copy` for lightweight editable text; arbitrary extra root metadata is preserved.
+2. Write `post.json` using src/schemas/post.ts and the skill's content-schema.md. Include a registered `style` ID, unique slide IDs and ordering, all three formats, and any asset slots. Use `copy` for lightweight editable text; arbitrary extra root metadata is preserved.
 3. Write `caption.md` containing only social copy.
-4. Default-export a React component from `Post.tsx` with `PostProps` from `@/types/post`. It receives `format`, `slideId`, `metadata` and `postKey`. The studio wraps the component in SocialCanvas/Slide. Compose all three formats in this component and scope its styles in `post.module.css`.
+4. Default-export a React component from `Post.tsx` with `PostProps` from `@/types/post`. It receives `format`, `slideId`, `metadata`, `postKey`, `contentStyle` and `template`. The studio wraps the component in SocialCanvas/Slide/StyleSurface. Use the selected pack’s `--content-*` variables in CSS and the supplied props in programmatic SVG. Compose all three formats in this component and scope its styles in `post.module.css`.
 5. Add local assets under the post's `assets/` folder or reuse `public/assets/`. Use AssetSlot for deferred images; pass metadata/postKey so uploads automatically render.
 6. Run `npm run registry` and `npm run validate`. Open `/posts/<folder-key>`.
 
@@ -49,7 +55,7 @@ Canvas compositions mount in the browser, so newly generated imports cannot prod
 
 The generated, version-controlled `src/lib/content-registry.ts` is a small static import registry. It runs before dev/build/validate and after UI creation. Only one generated file changes when a post is added. Existing Post.tsx/CSS files hot-reload. If creating a directory externally while dev is already running, run the registry command. Production requires a rebuild for new source components. Uploaded images never execute as code.
 
-Shared primitives: SocialCanvas (explicit dimensions and preview scaling), Slide, Carousel, AssetSlot and EditableText. They do not dictate composition style. The example demonstrates separate hierarchy, grouping and flow for each aspect ratio. Layout is code, not a JSON design tree.
+Shared primitives: SocialCanvas (explicit dimensions and preview scaling), Slide, Carousel, AssetSlot and EditableText. StyleSurface applies pack tokens and format defaults while preserving post-authored semantic composition. The example demonstrates separate hierarchy, grouping and flow for each aspect ratio. Layout is code, not a JSON design tree.
 
 ## Content organization
 
@@ -74,7 +80,7 @@ Library filters include status, year, month, week, campaign, category and platfo
 | Square   | 1080 × 1080  |
 | Story    | 1080 × 1920  |
 
-The same DOM powers preview and export. An outer wrapper scales the preview; html-to-image captures the full logical canvas with pixelRatio 1, after fonts and images load. JPG is default at quality 0.95 with a white background. PNG supports transparency. Keep assets and fonts local; remote resources, browser-specific filters or external SVG dependencies can prevent faithful export.
+The same DOM powers preview and export. An outer wrapper scales the preview; html-to-image captures the full logical canvas with pixelRatio 1, after fonts and images load. JPG is default at quality 0.95 with the selected pack’s canvas-color background. PNG supports transparency. Keep assets and fonts local; remote resources, browser-specific filters or external SVG dependencies can prevent faithful export.
 
 Names use `<slug>-<format>-01.jpg` (or `.png`), including single slides. Slides are sorted numerically by their explicit order then numbered contiguously. Each slide has a download; Download all produces a ZIP for multiple slides. JPG/PNG selections are independent per panel. Missing slots are clearly marked; draft exports include visible placeholders until filled.
 
@@ -101,3 +107,16 @@ Filesystem APIs restrict paths to repository roots, reject traversal and symlink
 ## Checks
 
 Infrastructure tests cover real dates/week buckets, schema validation, all dimensions, deterministic carousel ordering/names, traversal and symlink rejection, and missing assets. Browser tests exercise create/read/edit/upload/export/calendar flows in an isolated copy, inspect image dimensions and ZIP order, and preserve the one-example working tree. Avoid brittle pixel-perfect snapshots.
+
+## Content Style migration
+
+All eight existing posts explicitly select `default`. Their content, caption files,
+slide ordering, publication metadata and editor changes were retained. Repeated
+hard-coded publication colors/fonts now reference the neutral pack’s tokens;
+format typography and safe margins are resolved from its three templates. This
+is a publication-style migration, not an application redesign. No branded packs
+were inferred from the application DESIGN.md.
+
+Changing a pack does not change the application stylesheet. Runtime checks show
+style-rule violations in each panel and block nonconforming exports. See the pack
+documentation for exactly what is checked and what still needs visual review.

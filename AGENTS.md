@@ -1,9 +1,11 @@
 # Social Content Studio — repository rules
 
-- Read DESIGN.md completely before creating or significantly modifying social content. Undefined sections are not permission to invent a brand; report that brand-specific rules are undefined.
+- DESIGN.md describes ONLY the Content Creator application UI. Read it for application UI changes; never use it to design publications.
+- Every post must explicitly reference a registered Content Style in post.json.style. Before authoring content, read that pack’s STYLE.md, tokens.ts, rules.ts, format templates and relevant examples. Resolve runtime styles only through content-styles/loader.ts; unknown styles are errors, never implicit fallbacks.
 - Never use or request generative image models. Compose with React, HTML, CSS, SVG and local project assets. Request missing photography/screenshots through asset slots.
 - Every post must implement Portrait (1080×1350), Square (1080×1080), and Story (1080×1920). Recompose each deliberately; never derive formats by cropping, stretching or scaling a finished layout.
-- Reusable primitives handle canvas, slide ordering, export and assets, not brand styling. Keep each post's composition in Post.tsx and styling in post.module.css. Do not replace these with a large JSON presentation system.
+- Reusable primitives handle canvas, slide ordering, export and assets. StyleSurface supplies the selected pack’s tokens and format template; previews and exports enforce its machine-readable rules. Keep post-specific semantic composition in Post.tsx and geometry in post.module.css, consuming --content-* variables. Do not duplicate colors/fonts or invent a spacing system in posts.
+- Preserve style precedence: explicit supported post content/geometry, selected template, rules, tokens, STYLE.md, then explicit pack defaults. Post configuration never bypasses hard rules. Missing required information is a validation error. Do not replace composition code with a large JSON presentation system.
 - Store posts in content/YYYY/MM/week-XX/post-slug/. Weeks are editorial buckets: 1–7, 8–14, 15–21, 22–end of month. IDs match folder slugs. Metadata and physical folders must agree. Flag inconsistent dates; do not silently move files.
 - Keep caption.md separate from post.json. Preserve unknown metadata when editing. Reuse public/assets/ when appropriate; post-only assets belong in that post's assets/ directory.
 - Slide IDs and order values must be unique; preserve narrative order across all formats. Use orderedSlides and the centralized SOCIAL_FORMATS and exportFilename utilities.

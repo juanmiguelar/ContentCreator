@@ -1,0 +1,194 @@
+/* Composition geometry; visual values come from the selected Content Style. */
+.base {
+  box-sizing: border-box;
+  height: 100%;
+  padding: var(--content-padding-top) var(--content-padding-x)
+    var(--content-padding-bottom);
+  background: var(--content-color-canvas);
+  color: var(--content-color-ink);
+  font-family: var(--content-font-body);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.base header,
+.base footer {
+  display: flex;
+  justify-content: space-between;
+  gap: calc(var(--content-space-unit) * 5);
+  font-family: var(--content-font-label);
+  font-size: var(--content-label-size);
+  letter-spacing: var(--content-label-tracking);
+  line-height: var(--content-body-leading);
+}
+.base header {
+  padding-bottom: calc(var(--content-space-unit) * 5.5);
+  border-bottom: calc(var(--content-space-unit) * 0.25) solid
+    var(--content-color-line);
+}
+.base main {
+  position: relative;
+  z-index: 1;
+  margin-top: var(--content-lead-space);
+  max-width: var(--content-size-contentWidth);
+}
+.base h1 {
+  white-space: pre-line;
+  margin: 0;
+  color: var(--content-color-ink);
+  font-size: var(--content-title-size);
+  font-weight: var(--content-title-weight);
+  letter-spacing: var(--content-title-tracking);
+  line-height: var(--content-title-leading);
+}
+.base p {
+  max-width: var(--content-size-bodyWidth);
+  margin: calc(var(--content-space-unit) * 8) 0 0;
+  color: var(--content-color-muted);
+  font-size: var(--content-body-size);
+  line-height: var(--content-body-leading);
+}
+.diagram {
+  position: absolute;
+  right: calc(var(--content-space-unit) * -20);
+  top: calc(var(--content-space-unit) * 52.5);
+  width: calc(var(--content-space-unit) * 127.5);
+  height: calc(var(--content-space-unit) * 127.5);
+  background: var(--content-color-surface);
+  clip-path: polygon(24% 0, 100% 0, 100% 76%, 76% 100%, 0 100%, 0 24%);
+  border-left: calc(var(--content-space-unit) * 0.25) solid
+    var(--content-color-line);
+}
+.diagram:before {
+  content: "";
+  position: absolute;
+  inset: calc(var(--content-space-unit) * 6);
+  background: var(--content-color-surface);
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 78% 100%, 0 100%);
+}
+.diagram span {
+  position: absolute;
+  display: block;
+  border: calc(var(--content-space-unit) * 0.25) solid
+    var(--content-color-accent);
+  opacity: 0.75;
+}
+.diagram span:nth-child(1) {
+  width: calc(var(--content-space-unit) * 42.5);
+  height: calc(var(--content-space-unit) * 42.5);
+  right: calc(var(--content-space-unit) * 20.5);
+  top: calc(var(--content-space-unit) * 20.5);
+}
+.diagram span:nth-child(2) {
+  width: calc(var(--content-space-unit) * 20);
+  height: calc(var(--content-space-unit) * 20);
+  right: calc(var(--content-space-unit) * 31.75);
+  top: calc(var(--content-space-unit) * 31.75);
+  background: var(--content-color-surface);
+}
+.diagram span:nth-child(3) {
+  height: calc(var(--content-space-unit) * 0.25);
+  width: calc(var(--content-space-unit) * 95);
+  right: calc(var(--content-space-unit) * 10.5);
+  bottom: calc(var(--content-space-unit) * 31.5);
+  transform: rotate(-35deg);
+  transform-origin: right;
+}
+.base aside {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--content-space-unit) * 5.5);
+  margin-top: auto;
+  margin-bottom: calc(var(--content-space-unit) * 10.5);
+  border-left: calc(var(--content-space-unit) * 1) solid
+    var(--content-color-accent);
+  padding: calc(var(--content-space-unit) * 4) 0
+    calc(var(--content-space-unit) * 4) calc(var(--content-space-unit) * 5.5);
+  font-family: var(--content-font-label);
+  font-size: var(--content-label-size);
+  letter-spacing: var(--content-label-tracking);
+}
+.base aside strong {
+  color: var(--content-color-ink);
+  font-family: var(--content-font-body);
+  font-size: var(--content-small-size);
+  line-height: var(--content-body-leading);
+}
+.base footer {
+  padding-top: calc(var(--content-space-unit) * 5.5);
+  border-top: calc(var(--content-space-unit) * 0.25) solid
+    var(--content-color-line);
+  background: var(--content-color-ink);
+  color: var(--content-color-inverseInk);
+  padding-left: calc(var(--content-space-unit) * 4.5);
+  padding-right: calc(var(--content-space-unit) * 4.5);
+  padding-bottom: calc(var(--content-space-unit) * 4.5);
+}
+.portrait {
+  padding: var(--content-padding-top) var(--content-padding-x)
+    var(--content-padding-bottom);
+}
+.portrait main {
+  margin-top: var(--content-lead-space);
+  max-width: var(--content-size-contentWidth);
+}
+.portrait .diagram {
+  top: calc(var(--content-space-unit) * 52.5);
+  right: calc(var(--content-space-unit) * -20);
+  width: calc(var(--content-space-unit) * 127.5);
+  height: calc(var(--content-space-unit) * 127.5);
+}
+.square {
+  padding: var(--content-padding-top) var(--content-padding-x)
+    var(--content-padding-bottom);
+}
+.square main {
+  margin-top: var(--content-lead-space);
+  max-width: var(--content-size-contentWidth);
+}
+.square h1 {
+  font-size: var(--content-title-size);
+}
+.square p {
+  max-width: var(--content-size-bodyWidth);
+  margin-top: calc(var(--content-space-unit) * 7);
+}
+.square .diagram {
+  top: calc(var(--content-space-unit) * 37.5);
+  right: calc(var(--content-space-unit) * -30);
+  width: calc(var(--content-space-unit) * 107.5);
+  height: calc(var(--content-space-unit) * 107.5);
+}
+.square aside {
+  margin-bottom: calc(var(--content-space-unit) * 7);
+}
+.story {
+  padding: var(--content-padding-top) var(--content-padding-x)
+    var(--content-padding-bottom);
+}
+.story main {
+  margin-top: var(--content-lead-space);
+  max-width: var(--content-size-contentWidth);
+}
+.story h1 {
+  font-size: var(--content-title-size);
+}
+.story p {
+  max-width: var(--content-size-bodyWidth);
+  margin-top: calc(var(--content-space-unit) * 10);
+  font-size: var(--content-body-size);
+}
+.story .diagram {
+  top: calc(var(--content-space-unit) * 117.5);
+  right: calc(var(--content-space-unit) * -32.5);
+  width: calc(var(--content-space-unit) * 152.5);
+  height: calc(var(--content-space-unit) * 152.5);
+}
+.story aside {
+  margin-bottom: calc(var(--content-space-unit) * 17);
+  font-size: var(--content-label-size);
+}
+.story footer {
+  font-size: var(--content-label-size);
+}

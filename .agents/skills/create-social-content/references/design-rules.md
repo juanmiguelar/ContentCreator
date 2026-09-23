@@ -1,9 +1,13 @@
-# Design rules
+# Publication design authority
 
-Root DESIGN.md is authoritative. Read it completely before creating or substantially changing posts. Its typography, colors, spacing, motifs, layout constraints, voice, SVG rules and photography direction override generic conventions.
+DESIGN.md = application UI only. content-styles/<post.style>/ = publication identity.
 
-An incomplete specification means brand decisions are undefined. Do not infer a brand from application chrome, sample content or the neutral new-idea scaffold. Flag the gap and keep drafts neutral unless the user provides direction.
+Read the selected registered pack's STYLE.md, tokens, rules, format templates and relevant examples before authoring. STYLE.md describes art direction; exact TS tokens and machine rules are authoritative and consumed by the renderer. Never infer publication identity from studio chrome or an unrelated post.
 
-Compose Portrait, Square and Story independently around the same concept. Adapt content density, grouping, emphasis and reading flow to each ratio; merely repositioning an identical finished composition is insufficient.
+Use explicit post content/geometry first, then the selected format template, hard rules, tokens, STYLE.md guidance and explicit pack defaults. Rules constrain all levels. Missing required fields are validation errors, not permission to invent values. This release has no free-form JSON visual overrides.
 
-Maintainable programmatic SVG is allowed. Generative raster imagery and image-generation APIs are not. Reuse local assets or declare slots for unavailable photos/screenshots. Scope CSS per post. Shared primitives provide infrastructure without forcing visual style.
+Preserve identity, hierarchy, typography, image treatment and narrative across formats while recomposing grouping, density and flow. Consume --content-title-size, --content-padding-x, --content-gap, --content-columns and other template-resolved variables. Bespoke diagram coordinates are post geometry; derive lengths from named sizing/spacing tokens or multiples of --content-space-unit. Do not hard-code colors/fonts/pixel systems into post CSS.
+
+SVG is permitted. Declare custom motifs with data-content-motif using the style allowlist. Use StyleAsset for named pack images/logos; logo placement must be allowed. Use AssetSlot for missing user images. Neither raster generation models nor image-generation APIs are permitted.
+
+Preview/export checks enforce palette, font stacks/count, gradients, shadows, emoji text, radii, alignment, image fitting, declared motifs and logo placement. Export is blocked for violations. Bitmap/SVG image interiors and semantic art direction still need source/visual review. Examples are optional reference material, never runtime dependencies.

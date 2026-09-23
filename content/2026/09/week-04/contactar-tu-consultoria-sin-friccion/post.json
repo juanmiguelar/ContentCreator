@@ -55,5 +55,6 @@
   "requiredAssets": [],
   "copy": {
     "headline": "Tu formulario también es parte de la primera impresión."
-  }
+  },
+  "style": "web-para-consultorios"
 }

@@ -1,3 +1,4 @@
+import { validateStyledCanvas } from "../../../content-styles/validate-dom";
 import { toJpeg, toPng } from "html-to-image";
 import JSZip from "jszip";
 import { exportFilename } from "./names";
@@ -15,6 +16,7 @@ export async function renderCanvas(
         throw new Error("An image did not load. Replace it before exporting.");
     }),
   );
+  const contentStyle = validateStyledCanvas(node);
   const { width, height } = SOCIAL_FORMATS[format];
   const options = {
     width,
@@ -23,7 +25,8 @@ export async function renderCanvas(
     canvasHeight: height,
     pixelRatio: 1,
     quality: 0.95,
-    backgroundColor: type === "jpg" ? "#ffffff" : undefined,
+    backgroundColor:
+      type === "jpg" ? contentStyle.tokens.colors.canvas : undefined,
     skipAutoScale: true,
     cacheBust: true,
   };
@@ -44,6 +47,7 @@ export async function exportSlides(
   type: "jpg" | "png",
   startIndex = 1,
 ) {
+  nodes.forEach(validateStyledCanvas);
   if (!nodes.length) throw new Error("No slides to export");
   if (nodes.length === 1) {
     download(

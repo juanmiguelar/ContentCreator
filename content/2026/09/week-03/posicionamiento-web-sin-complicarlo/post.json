@@ -1,0 +1,60 @@
+{
+  "id": "posicionamiento-web-sin-complicarlo",
+  "style": "web-para-consultorios",
+  "title": "Posicionamiento web sin complicarlo",
+  "platform": [
+    "instagram",
+    "linkedin"
+  ],
+  "status": "draft",
+  "calendar": {
+    "year": 2026,
+    "month": 9,
+    "week": 3
+  },
+  "publishDate": "2026-09-21",
+  "campaign": "Presencia web para consultoría",
+  "categories": [
+    "educación",
+    "posicionamiento web",
+    "consultoría"
+  ],
+  "formats": [
+    "portrait",
+    "square",
+    "story"
+  ],
+  "slides": [
+    {
+      "id": "encontrarte",
+      "order": 1,
+      "label": "Que te encuentren"
+    },
+    {
+      "id": "intencion",
+      "order": 2,
+      "label": "La intención"
+    },
+    {
+      "id": "respuestas",
+      "order": 3,
+      "label": "Respuestas útiles"
+    },
+    {
+      "id": "primer-paso",
+      "order": 4,
+      "label": "El primer paso"
+    }
+  ],
+  "published": {
+    "instagram": {
+      "date": "2026-09-21",
+      "url": "https://www.instagram.com/p/DdmRXW5m_Cj/?img_index=1"
+    },
+    "linkedin": null
+  },
+  "requiredAssets": [],
+  "copy": {
+    "headline": "Posicionamiento web\nsin complicarlo"
+  }
+}

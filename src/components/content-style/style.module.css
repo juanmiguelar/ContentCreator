@@ -1,0 +1,41 @@
+.surface {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--content-color-ink);
+  background: var(--content-color-canvas);
+  font-family: var(--content-font-body);
+  font-size: var(--content-body-size);
+  font-weight: var(--content-body-weight);
+  line-height: var(--content-body-leading);
+  text-align: var(--content-text-align);
+  letter-spacing: normal;
+}
+/* Scope base element styles so studio chrome cannot supply publication defaults. */
+.surface :where(*) {
+  box-sizing: border-box;
+}
+.surface :where(h1, h2, h3, p, figure, ol, ul) {
+  margin: 0;
+}
+.surface :where(h1, h2, h3) {
+  font-family: var(--content-font-body);
+  font-weight: var(--content-title-weight);
+}
+.surface :where(button, a, input, select, textarea) {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  border-radius: var(--content-radius-card);
+  padding: 0;
+  box-shadow: none;
+}
+.surface :where(img) {
+  object-fit: var(--content-image-fit);
+}
+.mark {
+  width: calc(var(--content-size-icon) * 0.75);
+  height: calc(var(--content-size-icon) * 0.75);
+  flex: 0 0 auto;
+}

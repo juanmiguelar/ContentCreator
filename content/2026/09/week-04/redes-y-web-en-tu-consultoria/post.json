@@ -1,16 +1,57 @@
 {
   "id": "redes-y-web-en-tu-consultoria",
   "title": "Tu perfil abre la conversación. Tu web puede darle contexto.",
-  "platform": ["instagram", "linkedin"], "status": "draft",
-  "calendar": { "year": 2026, "month": 9, "week": 4 }, "publishDate": "2026-09-23",
-  "campaign": "Presencia web para consultoría", "categories": ["educación", "presencia digital", "consultoría"],
-  "formats": ["portrait", "square", "story"],
-  "slides": [
-    { "id": "conversacion", "order": 1, "label": "La conversación" },
-    { "id": "redes", "order": 2, "label": "El papel de las redes" },
-    { "id": "web", "order": 3, "label": "El papel de la web" },
-    { "id": "conecta", "order": 4, "label": "Conectar ambos espacios" }
+  "platform": [
+    "instagram",
+    "linkedin"
   ],
-  "published": { "instagram": null, "linkedin": null }, "requiredAssets": [],
-  "copy": { "headline": "Tu perfil abre la conversación. Tu web puede darle contexto." }
+  "status": "draft",
+  "calendar": {
+    "year": 2026,
+    "month": 9,
+    "week": 4
+  },
+  "publishDate": "2026-09-23",
+  "campaign": "Presencia web para consultoría",
+  "categories": [
+    "educación",
+    "presencia digital",
+    "consultoría"
+  ],
+  "formats": [
+    "portrait",
+    "square",
+    "story"
+  ],
+  "slides": [
+    {
+      "id": "conversacion",
+      "order": 1,
+      "label": "La conversación"
+    },
+    {
+      "id": "redes",
+      "order": 2,
+      "label": "El papel de las redes"
+    },
+    {
+      "id": "web",
+      "order": 3,
+      "label": "El papel de la web"
+    },
+    {
+      "id": "conecta",
+      "order": 4,
+      "label": "Conectar ambos espacios"
+    }
+  ],
+  "published": {
+    "instagram": null,
+    "linkedin": null
+  },
+  "requiredAssets": [],
+  "copy": {
+    "headline": "Tu perfil abre la conversación. Tu web puede darle contexto."
+  },
+  "style": "web-para-consultorios"
 }

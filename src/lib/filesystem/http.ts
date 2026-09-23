@@ -1,3 +1,4 @@
+import { ContentStyleError } from "../../../content-styles/loader";
 import { ZodError } from "zod";
 import { ConflictError, InputError } from "../content/store";
 export function assertLocal(request: Request, mutation = false) {
@@ -36,6 +37,7 @@ export function apiError(error: unknown) {
     return Response.json({ error: "File not found" }, { status: 404 });
   if (
     error instanceof InputError ||
+    error instanceof ContentStyleError ||
     error instanceof SyntaxError ||
     (error instanceof Error &&
       /Invalid|Unsafe|Symlink|escapes|File content|Use PNG/.test(error.message))

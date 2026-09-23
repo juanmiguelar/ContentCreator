@@ -1,4 +1,14 @@
 import { z } from "zod";
+import { getContentStyle } from "../../content-styles/loader";
+import { styleIdSchema } from "../../content-styles/schema";
+export const registeredStyleSchema = styleIdSchema.refine((id) => {
+  try {
+    getContentStyle(id);
+    return true;
+  } catch {
+    return false;
+  }
+}, "Unknown Content Style. Register it in content-styles/loader.ts.");
 import { calendarFromDate } from "../lib/content/formats";
 export const slugSchema = z
   .string()
@@ -37,6 +47,7 @@ export const assetSchema = z.object({
 export const postSchema = z
   .object({
     id: slugSchema,
+    style: registeredStyleSchema,
     title: z.string().trim().min(1).max(200),
     platform: z.array(platformSchema).min(1),
     status: z.enum(["idea", "draft", "ready", "published"]),
@@ -99,6 +110,7 @@ export const updateSchema = z.object({
   revision: z.string().length(64),
 });
 export const createSchema = z.object({
+  style: registeredStyleSchema,
   title: z.string().trim().min(1).max(200),
   id: slugSchema,
   date: dateSchema,

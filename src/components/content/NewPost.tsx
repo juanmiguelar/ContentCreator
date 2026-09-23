@@ -1,9 +1,11 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import { ContentStyleSelector } from "@/components/content-style/ContentStyleSelector";
 import { Icon } from "@/components/Icon";
 export function NewPost() {
   const [open, setOpen] = useState(false),
     [title, setTitle] = useState(""),
+    [style, setStyle] = useState("default"),
     [slug, setSlug] = useState(""),
     [date, setDate] = useState(() => new Date().toLocaleDateString("en-CA")),
     [error, setError] = useState(""),
@@ -17,7 +19,7 @@ export function NewPost() {
       if (event.key === "Escape" && !busy) setOpen(false);
       if (event.key === "Tab") {
         const nodes = dialog.current?.querySelectorAll<HTMLElement>(
-          "input, button:not(:disabled)",
+          "input, select, button:not(:disabled)",
         );
         if (!nodes?.length) return;
         if (event.shiftKey && document.activeElement === nodes[0]) {
@@ -46,7 +48,7 @@ export function NewPost() {
       const response = await fetch("/api/posts", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ title, id: slug, date }),
+        body: JSON.stringify({ title, id: slug, date, style }),
       });
       const result = await response.json();
       if (!response.ok) throw new Error(result.error);
@@ -75,10 +77,12 @@ export function NewPost() {
           >
             <h2 id="new-title">Make room for an idea.</h2>
             <p>
-              Create a repository folder with editable copy and three neutral
-              draft layouts. Then ask Codex to design your composition.
+              Create a repository folder with editable copy and three layouts
+              from the selected Content Style. Then ask Codex to design your
+              composition.
             </p>
             <form onSubmit={create}>
+              <ContentStyleSelector value={style} onChange={setStyle} />
               <label>
                 Post title
                 <input

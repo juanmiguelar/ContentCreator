@@ -1,7 +1,10 @@
 {
   "id": "example-post",
   "title": "A little structure. More room to create.",
-  "platform": ["instagram", "linkedin"],
+  "platform": [
+    "instagram",
+    "linkedin"
+  ],
   "status": "draft",
   "calendar": {
     "year": 2026,
@@ -10,8 +13,15 @@
   },
   "publishDate": "2026-09-21",
   "campaign": "Getting started",
-  "categories": ["example", "workflow"],
-  "formats": ["portrait", "square", "story"],
+  "categories": [
+    "example",
+    "workflow"
+  ],
+  "formats": [
+    "portrait",
+    "square",
+    "story"
+  ],
   "slides": [
     {
       "id": "cover",
@@ -42,5 +52,6 @@
     "subtitle": "One idea. Three perspectives. All in your repository.",
     "body": "Start with an idea. Shape it in code. Make it yours.",
     "cta": "Your next idea starts here."
-  }
+  },
+  "style": "web-para-consultorios"
 }

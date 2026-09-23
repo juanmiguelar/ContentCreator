@@ -55,5 +55,6 @@
   "requiredAssets": [],
   "copy": {
     "headline": "Te recomendaron. ¿Qué encuentra tu próximo cliente?"
-  }
+  },
+  "style": "web-para-consultorios"
 }

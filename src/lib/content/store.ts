@@ -239,6 +239,7 @@ export async function createPost(input: {
   id: string;
   title: string;
   date: string;
+  style: string;
 }) {
   return mutate(async () => {
     const calendar = calendarFromDate(input.date);
@@ -257,6 +258,7 @@ export async function createPost(input: {
     }
     const metadata = postSchema.parse({
       id: input.id,
+      style: input.style,
       title: input.title,
       platform: ["instagram"],
       status: "idea",
@@ -266,7 +268,7 @@ export async function createPost(input: {
       slides: [{ id: "cover", order: 1, label: "Cover" }],
       copy: {
         headline: input.title,
-        body: "Draft composition. Ask Codex to design this post using DESIGN.md.",
+        body: "Draft composition. Ask Codex to develop this post using its selected Content Style.",
       },
     });
     await mkdir(path.join(target, "assets"));

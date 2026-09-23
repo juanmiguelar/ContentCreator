@@ -55,5 +55,6 @@
   "requiredAssets": [],
   "copy": {
     "headline": "¿Tu web explica bien tu consultoría?"
-  }
+  },
+  "style": "web-para-consultorios"
 }

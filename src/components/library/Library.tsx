@@ -266,10 +266,11 @@ export function Library({
         <div className="notice">
           <Icon name="code" size={18} />
           <p>
-            <strong>Your design system is a work in progress.</strong>
+            <strong>Publication design lives in Content Styles.</strong>
             <br />
-            Read and complete <code>DESIGN.md</code> before creating branded
-            content. The included example uses neutral styling.
+            Select a registered pack from <code>content-styles/</code> for every
+            post.
+            <code>DESIGN.md</code> describes only this application’s interface.
           </p>
         </div>
         <div className={styles.fileNote}>

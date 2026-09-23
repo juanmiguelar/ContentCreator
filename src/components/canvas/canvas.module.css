@@ -19,10 +19,11 @@
   border: 0;
   background: transparent;
 }
+/* Only publication primitives below this point; no studio colors/fonts. */
 .asset {
   display: block;
   width: 100%;
-  object-fit: contain;
+  object-fit: var(--content-image-fit);
 }
 .slot {
   width: 100%;
@@ -30,20 +31,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  padding: 32px;
-  border: 2px dashed #aaa;
-  background: #f6f6f6;
-  color: #777;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  font-size: 24px;
+  gap: var(--content-space-small);
+  padding: var(--content-space-medium);
+  border: var(--content-border-width) dashed var(--content-color-line);
+  background: var(--content-color-surface);
+  color: var(--content-color-muted);
+  text-align: var(--content-text-align);
+  font-family: var(--content-font-body);
+  font-size: var(--content-small-size);
   box-sizing: border-box;
 }
 .slot strong {
-  font-size: 30px;
-  font-weight: 500;
+  font-size: var(--content-body-size);
+  font-weight: var(--content-title-weight);
 }
 .slot small {
-  font-size: 19px;
+  font-size: var(--content-label-size);
 }

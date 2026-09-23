@@ -1,11 +1,12 @@
-/* Neutral architecture example. No project brand is defined in DESIGN.md. */
+/* Composition geometry; visual values come from the selected Content Style. */
 .base {
   height: 100%;
   box-sizing: border-box;
-  padding: 76px;
-  background: #f9f9f7;
-  color: #282a28;
-  font-family: Arial, Helvetica, sans-serif;
+  padding: var(--content-padding-top) var(--content-padding-x)
+    var(--content-padding-bottom);
+  background: var(--content-color-canvas);
+  color: var(--content-color-ink);
+  font-family: var(--content-font-body);
   display: flex;
   flex-direction: column;
 }
@@ -14,146 +15,154 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 24px;
-  font-size: 18px;
-  line-height: 1.5;
+  gap: calc(var(--content-space-unit) * 6);
+  font-size: var(--content-label-size);
+  line-height: var(--content-body-leading);
 }
 .base header {
-  letter-spacing: 3px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #c9cbc6;
+  letter-spacing: var(--content-label-tracking);
+  padding-bottom: calc(var(--content-space-unit) * 7.5);
+  border-bottom: calc(var(--content-space-unit) * 0.25) solid
+    var(--content-color-line);
 }
 .base header span {
   white-space: nowrap;
 }
 .base footer {
   margin-top: auto;
-  border-top: 1px solid #c9cbc6;
-  padding-top: 28px;
-  font-size: 18px;
+  border-top: calc(var(--content-space-unit) * 0.25) solid
+    var(--content-color-line);
+  padding-top: calc(var(--content-space-unit) * 7);
+  font-size: var(--content-label-size);
 }
 .base footer span {
   flex-shrink: 0;
-  font-size: 15px;
+  font-size: var(--content-label-size);
 }
 .base h1 {
-  font-size: 104px;
-  line-height: 1.03;
-  letter-spacing: -6px;
-  font-weight: 500;
+  font-size: var(--content-title-size);
+  line-height: var(--content-title-leading);
+  letter-spacing: var(--content-title-tracking);
+  font-weight: var(--content-title-weight);
   margin: 0;
   overflow-wrap: anywhere;
 }
 .base p {
-  font-size: 30px;
-  line-height: 1.5;
-  color: #646762;
+  font-size: var(--content-body-size);
+  line-height: var(--content-body-leading);
+  color: var(--content-color-muted);
 }
 .diagram {
   display: block;
   width: 100%;
-  color: #777b73;
+  color: var(--content-color-muted);
   flex-shrink: 0;
 }
 .portraitLead {
-  padding-top: 84px;
+  padding-top: var(--content-lead-space);
 }
 .portraitLead p {
-  max-width: 620px;
-  margin-top: 35px;
+  max-width: var(--content-size-bodyWidth);
+  margin-top: calc(var(--content-space-unit) * 8.75);
 }
 .portrait .diagram {
-  height: 400px;
-  margin: 28px 0;
+  height: calc(var(--content-space-unit) * 100);
+  margin: calc(var(--content-space-unit) * 7) 0;
 }
 .square {
-  padding: 64px;
+  padding: var(--content-padding-top) var(--content-padding-x)
+    var(--content-padding-bottom);
 }
 .squareLead {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 55px;
+  grid-template-columns: var(--content-columns);
+  gap: calc(var(--content-space-unit) * 13.75);
   align-items: end;
-  margin: 66px 0 32px;
+  margin: calc(var(--content-space-unit) * 16.5) 0
+    calc(var(--content-space-unit) * 8);
 }
 .squareLead h1 {
-  font-size: 83px;
-  letter-spacing: -4px;
+  font-size: var(--content-title-size);
+  letter-spacing: var(--content-title-tracking);
 }
 .squareLead p {
-  font-size: 28px;
+  font-size: var(--content-body-size);
   margin: 0;
-  border-left: 1px solid #c9cbc6;
-  padding-left: 32px;
+  border-left: calc(var(--content-space-unit) * 0.25) solid
+    var(--content-color-line);
+  padding-left: calc(var(--content-space-unit) * 8);
 }
 .square .diagram {
-  height: 275px;
+  height: calc(var(--content-space-unit) * 68.75);
 }
 .story {
-  padding: 130px 90px 140px;
+  padding: var(--content-padding-top) var(--content-padding-x)
+    var(--content-padding-bottom);
 }
 .storyLead {
-  margin-top: 150px;
+  margin-top: var(--content-lead-space);
 }
 .eyebrow {
-  font-size: 18px;
-  letter-spacing: 4px;
+  font-size: var(--content-label-size);
+  letter-spacing: var(--content-label-tracking);
   display: block;
-  margin-bottom: 42px;
+  margin-bottom: calc(var(--content-space-unit) * 10.5);
 }
 .story h1 {
-  font-size: 123px;
-  letter-spacing: -7px;
+  font-size: var(--content-title-size);
+  letter-spacing: var(--content-title-tracking);
 }
 .storyLead p {
-  max-width: 670px;
-  font-size: 37px;
-  margin-top: 54px;
+  max-width: var(--content-size-bodyWidth);
+  font-size: var(--content-body-size);
+  margin-top: calc(var(--content-space-unit) * 13.5);
 }
 .story .diagram {
-  height: 440px;
-  margin: 25px 0;
+  height: calc(var(--content-space-unit) * 110);
+  margin: calc(var(--content-space-unit) * 6.25) 0;
 }
 .storyNote {
-  border-left: 2px solid #aaa;
-  padding-left: 30px;
-  font-size: 31px;
-  line-height: 1.5;
-  max-width: 580px;
+  border-left: calc(var(--content-space-unit) * 0.5) solid
+    var(--content-color-line);
+  padding-left: calc(var(--content-space-unit) * 7.5);
+  font-size: var(--content-small-size);
+  line-height: var(--content-body-leading);
+  max-width: calc(var(--content-space-unit) * 145);
 }
 .workflow h1 {
-  font-size: 78px;
-  margin: 60px 0 40px;
-  letter-spacing: -4px;
+  font-size: var(--content-title-size);
+  margin: calc(var(--content-space-unit) * 15) 0
+    calc(var(--content-space-unit) * 10);
+  letter-spacing: var(--content-title-tracking);
 }
 .workflowBody {
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: calc(var(--content-space-unit) * 9);
 }
 .steps {
   display: flex;
-  gap: 26px;
+  gap: calc(var(--content-space-unit) * 6.5);
 }
 .steps p {
   flex: 1;
-  font-size: 23px;
+  font-size: var(--content-body-size);
   margin: 0;
 }
 .steps b {
   display: block;
-  font-size: 20px;
-  margin-bottom: 12px;
-  font-weight: normal;
-  color: #999;
+  font-size: var(--content-label-size);
+  margin-bottom: calc(var(--content-space-unit) * 3);
+  font-weight: var(--content-body-weight);
+  color: var(--content-color-muted);
 }
 .portrait .workflowBody > :last-child {
-  max-width: 720px;
+  max-width: calc(var(--content-space-unit) * 180);
   margin: auto;
 }
 .square.workflow h1 {
-  font-size: 66px;
-  margin: 45px 0;
+  font-size: var(--content-title-size);
+  margin: calc(var(--content-space-unit) * 11.25) 0;
 }
 .square .workflowBody {
   display: grid;
@@ -162,12 +171,13 @@
 }
 .square .steps {
   flex-direction: column;
-  gap: 34px;
+  gap: calc(var(--content-space-unit) * 8.5);
 }
 .story.workflow h1 {
-  font-size: 110px;
-  margin: 110px 0 70px;
+  font-size: var(--content-title-size);
+  margin: calc(var(--content-space-unit) * 27.5) 0
+    calc(var(--content-space-unit) * 17.5);
 }
 .story .workflowBody {
-  gap: 70px;
+  gap: calc(var(--content-space-unit) * 17.5);
 }

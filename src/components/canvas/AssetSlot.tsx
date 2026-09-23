@@ -39,8 +39,8 @@ export function AssetSlot({
       data-missing-asset={id}
     >
       <svg
-        width="64"
-        height="64"
+        width="var(--content-size-icon)"
+        height="var(--content-size-icon)"
         viewBox="0 0 64 64"
         fill="none"
         aria-hidden="true"
@@ -52,13 +52,19 @@ export function AssetSlot({
           height="52"
           rx="6"
           stroke="currentColor"
-          strokeWidth="2"
+          strokeWidth="var(--content-stroke)"
         />
-        <circle cx="23" cy="23" r="5" stroke="currentColor" strokeWidth="2" />
+        <circle
+          cx="23"
+          cy="23"
+          r="5"
+          stroke="currentColor"
+          strokeWidth="var(--content-stroke)"
+        />
         <path
           d="m8 48 16-15 10 10 8-8 14 13"
           stroke="currentColor"
-          strokeWidth="2"
+          strokeWidth="var(--content-stroke)"
         />
       </svg>
       <strong>{label}</strong>

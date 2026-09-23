@@ -1,15 +1,59 @@
 {
-  "id": "muestra-como-trabaja-tu-consultoria", "title": "Tu experiencia necesita algo más que una lista de títulos.",
-  "platform": ["instagram", "linkedin"], "status": "draft",
-  "calendar": { "year": 2026, "month": 9, "week": 4 }, "publishDate": "2026-09-24",
-  "campaign": "Presencia web para consultoría", "categories": ["educación", "confianza", "consultoría"],
-  "formats": ["portrait", "square", "story"],
-  "slides": [
-    { "id": "experiencia", "order": 1, "label": "La experiencia" },
-    { "id": "metodo", "order": 2, "label": "El método" },
-    { "id": "caso", "order": 3, "label": "El caso real" },
-    { "id": "razonamiento", "order": 4, "label": "El razonamiento" }
+  "id": "muestra-como-trabaja-tu-consultoria",
+  "style": "web-para-consultorios",
+  "title": "Tu experiencia necesita algo más que una lista de títulos.",
+  "platform": [
+    "instagram"
   ],
-  "published": { "instagram": null, "linkedin": null }, "requiredAssets": [],
-  "copy": { "headline": "Tu experiencia necesita algo más que una lista de títulos." }
+  "status": "draft",
+  "calendar": {
+    "year": 2026,
+    "month": 9,
+    "week": 4
+  },
+  "publishDate": "2026-09-24",
+  "campaign": "Presencia web para consultoría",
+  "categories": [
+    "educación",
+    "confianza",
+    "consultoría"
+  ],
+  "formats": [
+    "portrait",
+    "square",
+    "story"
+  ],
+  "slides": [
+    {
+      "id": "experiencia",
+      "order": 1,
+      "label": "La experiencia"
+    },
+    {
+      "id": "metodo",
+      "order": 2,
+      "label": "El método"
+    },
+    {
+      "id": "caso",
+      "order": 3,
+      "label": "El caso real"
+    },
+    {
+      "id": "razonamiento",
+      "order": 4,
+      "label": "El razonamiento"
+    }
+  ],
+  "published": {
+    "instagram": {
+      "date": "2026-09-24",
+      "url": "https://www.instagram.com/p/DdpMFo_myG9/?img_index=1"
+    },
+    "linkedin": null
+  },
+  "requiredAssets": [],
+  "copy": {
+    "headline": "Tu experiencia necesita algo más que una lista de títulos."
+  }
 }

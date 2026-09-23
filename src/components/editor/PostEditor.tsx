@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import type { PostRecord, AssetRecord } from "@/types/post";
 import type { PostMetadata } from "@/schemas/post";
 import dynamic from "next/dynamic";
+import { ContentStyleSelector } from "@/components/content-style/ContentStyleSelector";
 import styles from "./editor.module.css";
 // Compositions are browser-rendered: a newly regenerated registry may compile
 // between the server response and hydration. Keep the initial markup stable.
@@ -199,6 +200,10 @@ export function PostEditor({
           </p>
         ))}
       </div>
+      <ContentStyleSelector
+        value={metadata.style}
+        onChange={(value) => update("style", value)}
+      />
       <div className={styles.sectionHead}>
         <h2>One idea. Three compositions.</h2>
         <span>Full-resolution canvases · preview scaled to fit</span>
@@ -209,7 +214,7 @@ export function PostEditor({
           includes the placeholder until an image is supplied.
         </p>
       )}
-      <CompositionBoundary>
+      <CompositionBoundary key={metadata.style}>
         <PostPreviews post={post} />
       </CompositionBoundary>
       <div className={styles.editing}>
